@@ -7,6 +7,7 @@ Not Kaspa core. Not a dollar. Not a token sale. ENGINE_SPEC until a TN10 txid sa
 > my heart goes out to you
 
 Public: [https://github.com/STP-KAS/grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase)  
+Pages: [https://stp-kas.github.io/grok-heavy-showcase/](https://stp-kas.github.io/grok-heavy-showcase/)  
 Local: [http://127.0.0.1:4050/](http://127.0.0.1:4050/)
 
 ## Why this exists

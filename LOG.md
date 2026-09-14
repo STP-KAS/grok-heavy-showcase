@@ -2,6 +2,23 @@
 
 What we did, why, sources. Newest first.
 
+## 2026-09-14 — Pages live, local till up
+
+**Did**
+
+- Enabled GitHub Pages from `/docs`. Site **200**: https://stp-kas.github.io/grok-heavy-showcase/
+- Local `node serve.mjs` on **http://127.0.0.1:4050/** — `/`, `/lab.html`, `/till.html`, `/api/lab`, `/api/pulse` all 200
+- `/api/lab` verdict: nativeRedeemOk true, guestBlocked true, neverGas true
+- `/api/pulse` live: mainnet DAA 539958420, KAS/USD 0.03486, TN10 miner ~360,513 tKAS, both kaspads up
+- Pointer committed on kaspa-master-file: `GROK-HEAVY-SHOWCASE.md`
+- Issue #1 + comment
+
+**Why:** a best practice nobody can click is a manifesto. Pages is the public click. :4050 is the live pulse against this PC's node, miner, Ishum, sixpack, PegLab.
+
+**Sources:** GitHub Pages API `status: built`; local HTTP 200s; api.kaspa.org via `/api/pulse`.
+
+---
+
 ## 2026-09-14 — grok heavy showcase, first cut
 
 **Asked:** use everything already chatted, all files, all GitHubs, search the internet, think big, make a Kaspa best practice that is useful. One track with Parker / Ishum / PegLab / Gramlane (or another Tether alternative). One track with Tether landed on Kaspa. Explain why an alternative to Tether matters (centralised can shut down; PoW is more resistant; Bitcoin passed the test to date). Report back to GitHub. Use TN wallet / miner / node. sixpack.wtf if needed. Dedication: *my heart goes out to you*.
