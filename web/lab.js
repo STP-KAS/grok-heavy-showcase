@@ -19,21 +19,30 @@ const paint = (lab) => {
   stepsEl.appendChild(v);
 };
 
+const loadLab = async () => {
+  try {
+    const res = await fetch('/api/lab');
+    if (res.ok) return res.json();
+  } catch {}
+  const [freeze, depeg] = await Promise.all([
+    fetch('lab.json').then((r) => r.json()),
+    fetch('depeg.json').then((r) => r.json()),
+  ]);
+  return {freeze, depeg};
+};
+
 document.getElementById('run').onclick = async () => {
-  const res = await fetch('/api/lab');
-  const data = await res.json();
+  const data = await loadLab();
   paint(data.freeze);
 };
 
 document.getElementById('depeg').onclick = async () => {
-  const res = await fetch('/api/lab');
-  const data = await res.json();
+  const data = await loadLab();
   depegEl.textContent = JSON.stringify(data.depeg, null, 2);
 };
 
 try {
-  const res = await fetch('/api/lab');
-  const data = await res.json();
+  const data = await loadLab();
   paint(data.freeze);
 } catch {
   recEl.textContent = 'Start serve.mjs to run the lab (node serve.mjs → http://127.0.0.1:4050/).';

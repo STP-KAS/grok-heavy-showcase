@@ -6,7 +6,7 @@ import {
   freeze as nFreeze,
   inspect as nInspect,
   balanceOf as nBal,
-} from '/src/native-rail.mjs';
+} from './src/native-rail.mjs';
 import {
   genesis as tGenesis,
   mint,
@@ -15,7 +15,7 @@ import {
   destroy as tDestroy,
   inspect as tInspect,
   balanceOf as tBal,
-} from '/src/tether-rail.mjs';
+} from './src/tether-rail.mjs';
 
 const ALICE = '11'.repeat(32);
 const BOB = '22'.repeat(32);

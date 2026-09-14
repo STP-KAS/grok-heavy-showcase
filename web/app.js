@@ -9,9 +9,16 @@ const fmt = (n) => {
   return x.toPrecision(4);
 };
 
+const loadPulse = async () => {
+  try {
+    const res = await fetch('/api/pulse');
+    if (res.ok) return res.json();
+  } catch {}
+  const res = await fetch('pulse.json');
+  return res.json();
+};
 try {
-  const res = await fetch('/api/pulse');
-  const p = await res.json();
+  const p = await loadPulse();
   el('daa').textContent = p.mainnet?.daa ?? '—';
   el('price').textContent = p.mainnet?.priceUsd != null ? '$' + Number(p.mainnet.priceUsd).toFixed(4) : '—';
   el('miner').textContent = p.tn10?.minerKas != null ? Math.round(p.tn10.minerKas).toLocaleString() + ' tKAS' : '—';
