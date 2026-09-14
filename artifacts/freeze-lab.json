@@ -1,0 +1,149 @@
+{
+  "name": "grok-heavy-freeze-lab",
+  "warning": "ENGINE_SPEC. Teaching integers. Not a live Tether freeze. Not SCRIPT_ENFORCED.",
+  "dedication": "my heart goes out to you",
+  "record": {
+    "asOf": "2026-09-14",
+    "walletsFrozenOrSeized": 11517,
+    "freezeEventsEthTron": 11085,
+    "valueAtMomentOfFreezeUsd": 5847780552,
+    "balancesDestroyed": 2434,
+    "usdtDestroyedUsd": 1434776099,
+    "unfreezeRate2025": 0.036,
+    "destroyShareOf2025Freezes": 0.556,
+    "ofacHitRate": 1,
+    "note": "Issuer contract has addBlackList and destroyBlackFunds. One key. No holder override. Bridging USDT onto Kaspa imports this switch."
+  },
+  "verdict": {
+    "nativeRedeemOk": true,
+    "guestMoveOk": false,
+    "guestBlocked": true,
+    "neverGas": true,
+    "nativeHasNoFreeze": true,
+    "lesson": "Host USDT as a labelled guest. Never as gas, never as the dapp unit, never as the miner fee. Keep a PoW rail that no issuer can switch off."
+  },
+  "steps": [
+    {
+      "id": "quote",
+      "title": "Till quotes €2.50. Two rails offered. Labels stay honest.",
+      "quote": {
+        "eurCents": "250",
+        "display": "EUR 2.50"
+      },
+      "nativeQuoteSompi": "72000000",
+      "tetherQuoteMicro": "2500000",
+      "dappUnit": "native",
+      "minerFee": "native",
+      "x402": "native",
+      "merchantUsdt": true
+    },
+    {
+      "id": "alice-lock",
+      "title": "Alice locks sompi. 1 unit = 1 locked sompi. No oracle.",
+      "locked": "72000000",
+      "freezeSwitch": false,
+      "backedOneToOne": true
+    },
+    {
+      "id": "alice-pay",
+      "title": "Alice pays the merchant on the native rail. PoW sequences it.",
+      "moved": "72000000",
+      "merchantNative": "72000000",
+      "aliceNative": "0"
+    },
+    {
+      "id": "bob-pay",
+      "title": "Bob pays the merchant with USDT guest. Kaspa still sequences. The unit is Tether policy.",
+      "moved": "2500000",
+      "merchantUsdt": "2500000",
+      "bobUsdt": "0",
+      "extraRisk": [
+        "issuer-blacklist",
+        "issuer-destroy",
+        "bridge-operator",
+        "source-chain-halt"
+      ]
+    },
+    {
+      "id": "issuer-freeze",
+      "title": "Issuer blacklists the merchant. Guest rail stops. Native rail does not notice.",
+      "frozen": "3333333333333333333333333333333333333333333333333333333333333333",
+      "heldOnGuest": "2500000",
+      "nativeStillLiquid": "72000000",
+      "nativeCanRedeem": true,
+      "guestCanTransfer": false
+    },
+    {
+      "id": "alice-redeem",
+      "title": "Merchant redeems native sompi. Sponsor paid the fee. Principal intact.",
+      "released": "72000000",
+      "nativeEmpty": true,
+      "backedOneToOne": true
+    },
+    {
+      "id": "guest-blocked",
+      "title": "Merchant tries to move the USDT. Issuer switch wins.",
+      "guestMoveOk": false,
+      "guestError": {
+        "code": "FROZEN",
+        "message": "Sender is on the issuer blacklist. Transfer refused."
+      }
+    },
+    {
+      "id": "never-gas",
+      "title": "If USDT were gas, a freeze would halt the till and starve miners. Refused.",
+      "gasError": {
+        "code": "NEVER_GAS",
+        "message": "USDT is never the miner-fee asset. A freeze-capable issuer must not sit under GHOSTDAG security budget."
+      }
+    },
+    {
+      "id": "destroy",
+      "title": "Issuer destroys the frozen guest balance. Native redeem already finished.",
+      "destroyed": "2500000",
+      "guestCirculating": "0",
+      "nativeCirculating": "0"
+    }
+  ],
+  "native": {
+    "rail": "native",
+    "network": "testnet-10",
+    "seriesId": "abababababababababababababababababababababababababababababababab",
+    "seriesName": "grok-heavy-native-v1",
+    "lockedSompi": "0",
+    "circulating": "0",
+    "backedOneToOne": true,
+    "oracle": "none",
+    "freezeSwitch": false,
+    "canIssuerHalt": false,
+    "sponsorFeesPaid": "527600",
+    "units": [],
+    "warning": "RECEIPT. ONE UNIT = ONE LOCKED SOMPI. NOT USD. NOT tPEG. NO FREEZE SWITCH."
+  },
+  "tether": {
+    "rail": "tether-guest",
+    "issuer": "tether-limited",
+    "bridge": "kasplex-class-bep20",
+    "freezeSwitch": true,
+    "canDestroy": true,
+    "neverGas": true,
+    "extraRisk": [
+      "issuer-blacklist",
+      "issuer-destroy",
+      "bridge-operator",
+      "source-chain-halt"
+    ],
+    "circulating": "0",
+    "minted": "2500000",
+    "burned": "2500000",
+    "frozen": [
+      "3333333333333333333333333333333333333333333333333333333333333333"
+    ],
+    "destroyed": [
+      "3333333333333333333333333333333333333333333333333333333333333333"
+    ],
+    "freezeEvents": 1,
+    "destroyEvents": 1,
+    "warning": "GUEST IOU. TETHER PRINTS, FREEZES, DESTROYS. KASPA SEQUENCES. THE UNIT IS TETHER POLICY."
+  }
+}

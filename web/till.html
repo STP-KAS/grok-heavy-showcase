@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dual-rail till — grok heavy showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./">Grok heavy showcase</a>
+  <nav>
+    <a href="./">Rails</a>
+    <a href="lab.html">Freeze lab</a>
+    <a class="on" href="till.html">Till</a>
+    <a href="http://127.0.0.1:8090/pos">Ishum :8090</a>
+  </nav>
+</header>
+<main>
+  <p class="kicker">Ishum-shaped · quotes EUR · two rails labelled</p>
+  <h1>Desk till</h1>
+  <p class="meta">Original live till stays at <a href="http://127.0.0.1:8090/pos">127.0.0.1:8090/pos</a>. This page is the dual-rail lesson on top: native receipt versus USDT guest, then an issuer freeze.</p>
+  <div class="till">
+    <section class="card">
+      <div class="display" id="display">2.50 <small>EUR</small></div>
+      <div class="keypad" id="pad"></div>
+      <div class="actions" style="display:flex;gap:.5rem;margin-top:.8rem;flex-wrap:wrap">
+        <button class="rail-btn native" type="button" id="pay-n">Pay native</button>
+        <button class="rail-btn guest" type="button" id="pay-t">Pay USDT guest</button>
+        <button class="rail-btn danger" type="button" id="freeze">Issuer freeze</button>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Ledger</h2>
+      <p class="meta" id="fx">FX banner: teaching 72m sompi / €2.50. Live KAS price loads if the pulse is up.</p>
+      <pre id="ledger">No tickets yet.</pre>
+    </section>
+  </div>
+</main>
+<footer>Not x402. Not a seed prompt. Desk holds 0 keys.</footer>
+<script type="module" src="till.js"></script>
+</body>
+</html>

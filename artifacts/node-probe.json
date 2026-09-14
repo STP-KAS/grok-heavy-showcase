@@ -1,0 +1,69 @@
+{
+  "at": "2026-09-14T19:58:52.321Z",
+  "dedication": "my heart goes out to you",
+  "warning": "Public REST + local port scan. Not consensus. Local 127.0.0.1 is this machine, not GitHub.",
+  "mainnet": {
+    "network": "kaspa-mainnet",
+    "daa": "539956582",
+    "blockCount": "1475435",
+    "difficulty": 17051701726232182,
+    "circulatingSompi": "2770042812553131897",
+    "maxSompi": "2870403560500000000",
+    "priceUsd": 0.03483377,
+    "hashrateApi": 341122.71973111364,
+    "hashrateNote": "api.kaspa.org/info/hashrate number is GH/s-class; ~342 PH/s on 14 Sep 2026."
+  },
+  "tn10": {
+    "network": "kaspa-testnet-10",
+    "daa": "570576300",
+    "blockCount": "1478523",
+    "miner": {
+      "ok": true,
+      "status": 200,
+      "url": "https://api-tn10.kaspa.org/addresses/kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx/balance",
+      "body": {
+        "address": "kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx",
+        "balance": 35660237303222
+      }
+    },
+    "peglabSponsor": {
+      "ok": true,
+      "status": 200,
+      "url": "https://api-tn10.kaspa.org/addresses/kaspatest:qzpvdakagvwfm95g8pv9ndpupjtndgjfhmve08cg3tv5wgfytjzf7cudwwzv0/balance",
+      "body": {
+        "address": "kaspatest:qzpvdakagvwfm95g8pv9ndpupjtndgjfhmve08cg3tv5wgfytjzf7cudwwzv0",
+        "balance": 27397268809886
+      }
+    },
+    "minerKas": 356602.37303222,
+    "peglabKas": 273972.68809886
+  },
+  "local": {
+    "ports": {
+      "4020": true,
+      "8090": true,
+      "8091": false,
+      "8765": true,
+      "16110": true,
+      "16111": true,
+      "16210": true,
+      "16211": true,
+      "17110": true,
+      "17210": true,
+      "18110": true
+    },
+    "ishum": true,
+    "sixpack": true,
+    "peglabUi": true,
+    "mainnetNodeRpc": true,
+    "tn10NodeRpc": true,
+    "minerHint": "kaspa-miner v0.2.7 -> 127.0.0.1:16210, address kaspatest:qzffl5…v0ldx, ua grokwallet"
+  },
+  "sources": [
+    "https://api.kaspa.org/info/blockdag",
+    "https://api.kaspa.org/info/coinsupply",
+    "https://api.kaspa.org/info/price",
+    "https://api.kaspa.org/info/hashrate",
+    "https://api-tn10.kaspa.org/info/blockdag"
+  ]
+}

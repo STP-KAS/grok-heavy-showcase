@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grok heavy showcase — dual-rail Kaspa</title>
+  <meta name="description" content="Best practice for Kaspa settlement: native PoW receipt vs Tether-on-Kaspa guest. Freeze lab. Not a dollar. Not Kaspa core.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./">Grok heavy showcase</a>
+  <nav>
+    <a class="on" href="./">Rails</a>
+    <a href="lab.html">Freeze lab</a>
+    <a href="till.html">Till</a>
+    <a href="https://github.com/STP-KAS/grok-heavy-showcase">GitHub</a>
+  </nav>
+</header>
+<section class="hero" style="background-image:url('hero.jpg')">
+  <div class="hero-copy">
+    <p class="kicker">Kaspa · dual rail · 14 Sep 2026</p>
+    <h1>One rail no issuer can freeze.<br>One rail that can. Label both.</h1>
+    <p class="heart">my heart goes out to you</p>
+  </div>
+</section>
+<main>
+  <p class="warn-banner">Not Kaspa core. Not a dollar. Not a token sale. Native rail is a 1-sompi receipt (Parker). Tether rail is a guest IOU. PegLab still WILL DEPEG. ENGINE_SPEC until a TN10 txid lands.</p>
+  <div class="pulse" id="pulse">
+    <div class="stat"><span>Mainnet DAA</span><b id="daa">…</b></div>
+    <div class="stat"><span>KAS / USD</span><b id="price">…</b></div>
+    <div class="stat"><span>TN10 miner</span><b id="miner">…</b></div>
+    <div class="stat"><span>Local nodes</span><b id="nodes">…</b></div>
+  </div>
+  <div class="grid">
+    <article class="card native">
+      <p class="kicker">Rail N · native PoW</p>
+      <h2>Parker receipt + Ishum till + Gramlane grams</h2>
+      <p>Bitcoin passed the test: no contract function can blacklist a UTXO. Kaspa kept proof of work, fair launch, and UTXO, then made it fast. A receipt is 1 locked sompi. Sponsor pays fees. There is no freeze switch.</p>
+      <p class="meta">Use for: dapp unit of account, miner fees, x402, sequencing, anything that must survive an issuer shutdown.</p>
+    </article>
+    <article class="card guest">
+      <p class="kicker">Rail T · Tether guest</p>
+      <h2>USDT landed on Kaspa</h2>
+      <p>Kasplex launched a Circle/Tether-standard stable bridge (BNB Smart Chain, 3 Mar 2026). Liquidity is real. So is the kill switch: <code>addBlackList</code> and <code>destroyBlackFunds</code>. Bridging does not remove the issuer. It imports it.</p>
+      <p class="meta">Use for: merchant dollar inventory, labelled. Never gas. Never dapp unit. Never miner fee.</p>
+    </article>
+  </div>
+  <h2>Why an alternative to Tether matters</h2>
+  <p>Centralised stables can be frozen, destroyed, or refused at the contract. That is not a rumour. The 2026 public record on Ethereum and Tron is thousands of wallets and more than a billion USDT destroyed. Proof-of-work cash has no such key. Bitcoin has taken every shutdown test thrown at it since 2009. Kaspa inherits that property on native KAS. Host USDT if you need the inventory. Do not let it become the only money the app can speak.</p>
+  <table>
+    <thead><tr><th>Job</th><th>Rail</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Dapp unit of account</td><td>Native</td><td>A freeze on the unit is a freeze on the app.</td></tr>
+      <tr><td>Miner fee / gas</td><td>Native KAS</td><td>Security budget cannot sit under Tether policy.</td></tr>
+      <tr><td>Machine call (x402)</td><td>Native KAS</td><td>Bind elldeeone/kaspa-x402. Future stable needs its own binding.</td></tr>
+      <tr><td>Sequencer bill</td><td>Gramlane grams</td><td>Prepaid mass. Wallet stays closed. Not $1.</td></tr>
+      <tr><td>Classroom</td><td>PegLab tPEG</td><td>WILL DEPEG. Keep it as the warning.</td></tr>
+      <tr><td>Merchant keypad</td><td>EUR/USD display</td><td>Ishum quotes fiat, settles KAS.</td></tr>
+      <tr><td>Dollar inventory today</td><td>USDT guest</td><td>Allowed if labelled. Freeze UX required.</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">Sisters: <a href="https://github.com/parker2017code/kaspa-explained">Parker</a> · <a href="https://github.com/STP-KAS/ishum">Ishum</a> · <a href="https://github.com/STP-KAS/peglab-stp">PegLab</a> · <a href="https://github.com/STP-KAS/gramlane">Gramlane</a> · <a href="https://sixpack.wtf">sixpack.wtf</a> · <a href="https://github.com/STP-KAS/kaspa-master-file">master file</a></p>
+</main>
+<footer>
+  STP-KAS / grok-heavy-showcase. MIT. Local URLs are this machine. GitHub is the public copy.
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
