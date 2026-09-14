@@ -1,0 +1,36 @@
+{
+  "name": "peglab-classroom",
+  "warning": "TESTNET TOY. NOT USD. WILL DEPEG.",
+  "before": {
+    "oraclePrice": "100000",
+    "poolPrice": "100000",
+    "redeemPrice": "100000",
+    "depegBps": "0",
+    "threePricesAgree": true,
+    "cannotDefend": true,
+    "warning": "TESTNET TOY. NOT USD. WILL DEPEG."
+  },
+  "afterOracle": {
+    "oraclePrice": "125000",
+    "poolPrice": "100000",
+    "redeemPrice": "125000",
+    "depegBps": "2000",
+    "threePricesAgree": false,
+    "cannotDefend": true,
+    "warning": "TESTNET TOY. NOT USD. WILL DEPEG."
+  },
+  "after": {
+    "oraclePrice": "125000",
+    "poolPrice": "121012",
+    "redeemPrice": "125000",
+    "depegBps": "319",
+    "threePricesAgree": false,
+    "cannotDefend": true,
+    "warning": "TESTNET TOY. NOT USD. WILL DEPEG."
+  },
+  "trade": {
+    "sompiIn": "20000000",
+    "tpegOut": "182"
+  },
+  "lesson": "A 2 tKAS pool is not a peg. Three prices disagree. Do not raise money against tPEG. The unit you would ship is the native receipt."
+}
