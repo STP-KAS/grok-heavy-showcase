@@ -2,6 +2,24 @@
 
 What we did, why, sources. Newest first.
 
+## 2026-09-15 morning — server restart after 10h cap
+
+**Did**
+
+- `:4050` died on the tool runtime cap (~10h). Mainnet kaspad, TN10 kaspad, miner, Ishum `:8090`, sixpack `:4020`, PegLab `:8765` were still up. Restarted `node serve.mjs`.
+- Re-ran `npm test` **10/10**. Freeze lab verdict unchanged: native redeem after issuer freeze, USDT guest blocked, never-gas.
+- Fresh pulse 2026-09-15T06:02Z:
+  - mainnet DAA **540,318,504**, KAS/USD **0.03502**, supply ~27.701B
+  - TN10 miner `kaspatest:qzffl5…v0ldx` **~1,031,278 tKAS** (was ~360k last night — CPU miner kept working)
+  - PegLab sponsor still ~273,973 tKAS
+  - both node RPCs up
+
+**Why:** a dead local till is a dead demo. The overnight miner gain is the PoW rail doing what Tether cannot: keep producing without an issuer key.
+
+**Sources:** `src/node-probe.mjs` → api.kaspa.org + api-tn10; local port scan; `npm test`.
+
+---
+
 ## 2026-09-14 — Pages live, local till up
 
 **Did**
