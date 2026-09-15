@@ -65,7 +65,7 @@ THINK-BIG already said: dollars 0–0, receipts beat dollars, skip centralised s
 **Not done yet (keep digging)**
 
 - Broadcast a native receipt on TN10 (1 sompi still fails storage mass; use a live floor)
-- Freeze-check a real Kasplex USDT contract if a public `isBlackListed` exists on that L2
+- Freeze-check a real guest USDT contract if a public `isBlackListed` exists
 - GitHub Pages for the UI
 - Wire Ishum's live :8090 keypad into this page instead of the teaching till
 - Report a short pointer from kaspa-master-file / sixpack.wtf to this repo

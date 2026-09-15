@@ -19,11 +19,12 @@ The desk already had the pieces:
 - Ishum — the pocket (EUR keypad, KAS settlement)
 - Gramlane — the sequencer bill (grams, wallet closed)
 - sixpack.wtf — the x402 verdict
-- Kasplex — USDT/USDC actually landed on Kaspa L2
 
 What was missing was one **working lesson** that puts a freeze-capable dollar next to a PoW rail and lets you feel the difference. This repo is that lesson.
 
 Centralised stables can be frozen and destroyed by the issuer. Bitcoin has no such key and has held that test since 2009. Kaspa inherits it on native KAS. Bridging Tether onto Kaspa is useful liquidity. It is not a replacement for a rail that cannot be switched off.
+
+PoC revisited: [POC-REVISITED.md](POC-REVISITED.md) · BitCoffee review: [STP-KAS/kusdt-bitcoffee](https://github.com/STP-KAS/kusdt-bitcoffee)
 
 Read: [BEST-PRACTICE.md](BEST-PRACTICE.md) · [WHY-NOT-ONLY-TETHER.md](WHY-NOT-ONLY-TETHER.md) · [SOURCES.md](SOURCES.md) · [LOG.md](LOG.md)
 

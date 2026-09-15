@@ -28,9 +28,7 @@ Trackers disagree on chain coverage (ETH+Tron vs 39 chains). The direction does 
 
 ## What “landed on Kaspa” does not fix
 
-Kasplex, 3 Mar 2026: a stablecoin bridge on Kaspa following Circle and Tether standards, BNB Smart Chain first, TRC20/ERC20 planned. Zealous Swap reported USDC and USDT live on Kasplex L2 the same day.
-
-That is **useful liquidity**. It is also **issuer + bridge**.
+Kasplex landing USDT/USDC is useful. It imports issuer policy into the money the dapp speaks. If the dapp unit can be frozen, the dapp can be frozen. Proof-of-work cash has held the no-blacklist test since 2009. Kaspa keeps that on native KAS. A KAS-backed covenant dollar is the attempt to keep it while quoting a dollar. BitCoffee is that attempt. It is not done.
 
 - Freeze on the source contract still applies to the bridged inventory if the bridge honours issuer policy.
 - Bridge operator risk is extra, not instead.

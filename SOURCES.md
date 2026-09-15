@@ -36,8 +36,7 @@ Sampled **14 Sep 2026**. Recheck live endpoints before quoting as current.
 
 - [Kasplex, 3 Mar 2026](https://x.com/kasplex/status/2028901724279464187) — stablecoin bridge, Circle/Tether standards, BEP20 first
 - [Kaspa Daily](https://x.com/DailyKaspa/status/2028924498053878134)
-- [Zealous Swap](https://x.com/ZealousSwap) — USDC/USDT live on Kasplex L2 via Kurve
-- Igra / Hyperlane / KasKad — USDT/USDC lending on Kaspa L2 (May 2026 reporting)
+- [Zealous Swap](https://x.com/ZealousSwap) — guest USDC/USDT reported live via Kurve
 
 ## Other Kaspa dollar research
 
