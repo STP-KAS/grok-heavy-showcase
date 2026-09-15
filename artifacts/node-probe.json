@@ -1,29 +1,29 @@
 {
-  "at": "2026-09-15T06:02:08.188Z",
+  "at": "2026-09-15T16:04:04.347Z",
   "dedication": "my heart goes out to you",
   "warning": "Public REST + local port scan. Not consensus. Local 127.0.0.1 is this machine, not GitHub.",
   "mainnet": {
     "network": "kaspa-mainnet",
-    "daa": "540318504",
-    "blockCount": "1405191",
-    "difficulty": 17018027485007298,
-    "circulatingSompi": "2770121811908027707",
+    "daa": "540679700",
+    "blockCount": "1334243",
+    "difficulty": 16938794371640464,
+    "circulatingSompi": "2770200633593312187",
     "maxSompi": "2870403560500000000",
-    "priceUsd": 0.03501658,
-    "hashrateApi": 340527.4436370329,
+    "priceUsd": 0.03315173,
+    "hashrateApi": 339089.69043913414,
     "hashrateNote": "api.kaspa.org/info/hashrate number is GH/s-class; ~342 PH/s on 14 Sep 2026."
   },
   "tn10": {
     "network": "kaspa-testnet-10",
-    "daa": "570937376",
-    "blockCount": "6596806",
+    "daa": "571297700",
+    "blockCount": "1335051",
     "miner": {
       "ok": true,
       "status": 200,
       "url": "https://api-tn10.kaspa.org/addresses/kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx/balance",
       "body": {
         "address": "kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx",
-        "balance": 103127806878631
+        "balance": 165638909141557
       }
     },
     "peglabSponsor": {
@@ -32,16 +32,16 @@
       "url": "https://api-tn10.kaspa.org/addresses/kaspatest:qzpvdakagvwfm95g8pv9ndpupjtndgjfhmve08cg3tv5wgfytjzf7cudwwzv0/balance",
       "body": {
         "address": "kaspatest:qzpvdakagvwfm95g8pv9ndpupjtndgjfhmve08cg3tv5wgfytjzf7cudwwzv0",
-        "balance": 27397268809886
+        "balance": 29397268809886
       }
     },
-    "minerKas": 1031278.06878631,
-    "peglabKas": 273972.68809886
+    "minerKas": 1656389.09141557,
+    "peglabKas": 293972.68809886
   },
   "local": {
     "ports": {
       "4020": true,
-      "8090": true,
+      "8090": false,
       "8091": false,
       "8765": true,
       "16110": true,
@@ -52,7 +52,7 @@
       "17210": true,
       "18110": true
     },
-    "ishum": true,
+    "ishum": false,
     "sixpack": true,
     "peglabUi": true,
     "mainnetNodeRpc": true,
