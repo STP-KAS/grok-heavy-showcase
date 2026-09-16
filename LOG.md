@@ -2,6 +2,23 @@
 
 What we did, why, sources. Newest first.
 
+## 2026-09-16 afternoon — fourth 10h cap
+
+**Did**
+
+- `:4050` died on the tool runtime cap again. Restarted `node serve.mjs`.
+- Mainnet `:16110`, TN10 `:16210`, miner PID 64096, sixpack `:4020`, PegLab `:8765` still up. Ishum `:8090` still down.
+- `npm test` **10/10**.
+- Pulse 2026-09-16T12:05Z:
+  - mainnet DAA **541,399,990**, KAS/USD **0.03227**
+  - TN10 miner **~2,821,491 tKAS** (morning ~2.21M)
+
+**Why:** keep the lesson clickable. Miner balance is still the PoW argument in public numbers.
+
+**Sources:** `src/node-probe.mjs`; local ports; `npm test`.
+
+---
+
 ## 2026-09-16 morning — third 10h cap
 
 **Did**
