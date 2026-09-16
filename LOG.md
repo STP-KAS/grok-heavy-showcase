@@ -2,6 +2,23 @@
 
 What we did, why, sources. Newest first.
 
+## 2026-09-17 night — fifth 10h cap
+
+**Did**
+
+- `:4050` died on the tool runtime cap again. Restarted `node serve.mjs`.
+- Mainnet `:16110`, TN10 `:16210`, miner PID 64096, sixpack `:4020`, PegLab `:8765` still up. Ishum `:8090` still down.
+- `npm test` **10/10**.
+- Pulse 2026-09-16T22:06Z (17 Sep 00:06 local):
+  - mainnet DAA **541,761,720**, KAS/USD **0.03277**
+  - TN10 miner **~3,392,188 tKAS** (afternoon 16 Sep ~2.82M)
+
+**Why:** keep the lesson clickable. Miner PID 64096 has been the same process since at least 16 Sep. That is the PoW rail.
+
+**Sources:** `src/node-probe.mjs`; local ports; `npm test`.
+
+---
+
 ## 2026-09-16 afternoon — fourth 10h cap
 
 **Did**
