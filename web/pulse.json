@@ -1,29 +1,29 @@
 {
-  "at": "2026-09-15T16:04:04.347Z",
+  "at": "2026-09-16T02:04:45.154Z",
   "dedication": "my heart goes out to you",
   "warning": "Public REST + local port scan. Not consensus. Local 127.0.0.1 is this machine, not GitHub.",
   "mainnet": {
     "network": "kaspa-mainnet",
-    "daa": "540679700",
-    "blockCount": "1334243",
-    "difficulty": 16938794371640464,
-    "circulatingSompi": "2770200633593312187",
+    "daa": "541039860",
+    "blockCount": "1261103",
+    "difficulty": 16629690542974818,
+    "circulatingSompi": "2770279246396208902",
     "maxSompi": "2870403560500000000",
-    "priceUsd": 0.03315173,
-    "hashrateApi": 339089.69043913414,
+    "priceUsd": 0.03245827,
+    "hashrateApi": 332575.07238824497,
     "hashrateNote": "api.kaspa.org/info/hashrate number is GH/s-class; ~342 PH/s on 14 Sep 2026."
   },
   "tn10": {
     "network": "kaspa-testnet-10",
-    "daa": "571297700",
-    "blockCount": "1335051",
+    "daa": "571659872",
+    "blockCount": "1264740",
     "miner": {
       "ok": true,
       "status": 200,
       "url": "https://api-tn10.kaspa.org/addresses/kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx/balance",
       "body": {
         "address": "kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx",
-        "balance": 165638909141557
+        "balance": 220595913842391
       }
     },
     "peglabSponsor": {
@@ -35,7 +35,7 @@
         "balance": 29397268809886
       }
     },
-    "minerKas": 1656389.09141557,
+    "minerKas": 2205959.13842391,
     "peglabKas": 293972.68809886
   },
   "local": {
