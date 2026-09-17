@@ -1,4 +1,6 @@
-> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital. [KASPAglobal](https://x.com/kaspaglobal/status/2100536064683176270) · [DISCLAIMER.md](DISCLAIMER.md)
+> **Experimental only. Not a product.** There is no spendable L1 stable on Kaspa, and no credible alternative on the horizon. Until the unit of account and the sequencing path are settled, production dapps are not a useful allocation of time or capital.
+>
+> Do not use wallet integrations on this GitHub. STP remains a clown. [DISCLAIMER.md](DISCLAIMER.md)
 
 # Grok heavy showcase
 
@@ -8,8 +10,8 @@ Not Kaspa core. Not a dollar. Not a token sale. ENGINE_SPEC until a TN10 txid sa
 
 > my heart goes out to you
 
-Public: [https://github.com/STP-KAS/grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase)  
-Pages: [https://stp-kas.github.io/grok-heavy-showcase/](https://stp-kas.github.io/grok-heavy-showcase/)  
+Public: [https://github.com/STP-KAS/grok-heavy-showcase](https://github.com/STP-KAS/grok-heavy-showcase)
+Pages: [https://stp-kas.github.io/grok-heavy-showcase/](https://stp-kas.github.io/grok-heavy-showcase/)
 Local: [http://127.0.0.1:4050/](http://127.0.0.1:4050/)
 
 ## Why this exists
